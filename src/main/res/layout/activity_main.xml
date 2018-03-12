@@ -31,6 +31,15 @@
         android:layout_height="wrap_content"
         android:text="数量"
         app:layout_constraintLeft_toRightOf="@id/main_clear"
+        app:layout_constraintRight_toLeftOf="@+id/add_fragment"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/add_fragment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="添加页面"
+        app:layout_constraintLeft_toRightOf="@id/main_count"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 

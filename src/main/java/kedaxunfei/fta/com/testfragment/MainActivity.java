@@ -29,4 +29,9 @@ public class MainActivity extends AppCompatActivity {
         int backStackEntryCount = getSupportFragmentManager().getBackStackEntryCount();
         Log.i(MyFragment.TAG, "MainActivity mainCount: count=" + backStackEntryCount);
     }
+
+    @OnClick(R.id.add_fragment)
+    void addFragment() {
+        getSupportFragmentManager().beginTransaction().replace(R.id.content_fl, new OtherFragment()).addToBackStack(null).commit();
+    }
 }
